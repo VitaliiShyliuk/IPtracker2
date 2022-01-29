@@ -594,75 +594,7 @@ async function getData(ip) {
     setData(data);
 }
 
-},{"./helpers":"kEqbI","leaflet/dist/leaflet.css":"6JhOO","leaflet":"iFbO2","../images/icon-location.svg":"3nhAY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kEqbI":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "validateIp", ()=>_validateIp.validateIp
-);
-parcelHelpers.export(exports, "addTileLayer", ()=>_addTileLayer.addTileLayer
-);
-var _validateIp = require("./validate-ip");
-var _addTileLayer = require("./addTileLayer");
-
-},{"./validate-ip":"hsVQT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./addTileLayer":"aFHUY"}],"hsVQT":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "validateIp", ()=>validateIp
-);
-function validateIp(validateIp1) {
-    if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(validateIp1)) return true;
-    alert("You have entered an invalid IP address!");
-    return false;
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule' || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"aFHUY":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "addTileLayer", ()=>addTileLayer
-);
-var _leaflet = require("leaflet");
-var _leafletDefault = parcelHelpers.interopDefault(_leaflet);
-function addTileLayer(map) {
-    _leafletDefault.default.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoidnNoeWxpdWsiLCJhIjoiY2t5bGZ3N29wMzVtajJvcGI5aTJ0ZGh5cSJ9.4BRlHoWWTVnPC8VAl4rf6g", {
-        maxZoom: 18,
-        id: "mapbox/streets-v11",
-        tileSize: 512,
-        zoomOffset: -1,
-        accessToken: "your.mapbox.access.token"
-    }).addTo(map);
-}
-
-},{"leaflet":"iFbO2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iFbO2":[function(require,module,exports) {
+},{"leaflet/dist/leaflet.css":"6JhOO","leaflet":"iFbO2","./helpers":"kEqbI","../images/icon-location.svg":"3nhAY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6JhOO":[function() {},{}],"iFbO2":[function(require,module,exports) {
 (function(global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) : typeof define === 'function' && define.amd ? define([
         'exports'
@@ -10892,7 +10824,75 @@ function addTileLayer(map) {
     window.L = exports;
 });
 
-},{}],"6JhOO":[function() {},{}],"3nhAY":[function(require,module,exports) {
+},{}],"kEqbI":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "validateIp", ()=>_validateIp.validateIp
+);
+parcelHelpers.export(exports, "addTileLayer", ()=>_addTileLayer.addTileLayer
+);
+var _validateIp = require("./validate-ip");
+var _addTileLayer = require("./addTileLayer");
+
+},{"./validate-ip":"hsVQT","./addTileLayer":"aFHUY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hsVQT":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "validateIp", ()=>validateIp
+);
+function validateIp(validateIp1) {
+    if (/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(validateIp1)) return true;
+    alert("You have entered an invalid IP address!");
+    return false;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule' || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"aFHUY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "addTileLayer", ()=>addTileLayer
+);
+var _leaflet = require("leaflet");
+var _leafletDefault = parcelHelpers.interopDefault(_leaflet);
+function addTileLayer(map) {
+    _leafletDefault.default.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoidnNoeWxpdWsiLCJhIjoiY2t5bGZ3N29wMzVtajJvcGI5aTJ0ZGh5cSJ9.4BRlHoWWTVnPC8VAl4rf6g", {
+        maxZoom: 18,
+        id: "mapbox/streets-v11",
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: "your.mapbox.access.token"
+    }).addTo(map);
+}
+
+},{"leaflet":"iFbO2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3nhAY":[function(require,module,exports) {
 module.exports = require('./helpers/bundle-url').getBundleURL('bLxZJ') + "icon-location.101dcdc8.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {

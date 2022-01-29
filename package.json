@@ -1,9 +1,10 @@
 {
   "name": "iptracker2",
   "version": "1.0.0",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "start": "parcel ./index.html"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "",
