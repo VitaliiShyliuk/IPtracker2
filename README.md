@@ -10,5 +10,6 @@ Ip tracker. Version 1.
 Used API:
 - ipify - fetch by IP an information (https://www.ipify.org/);
 - leaflet - a map API (https://leafletjs.com/).
+
 Build tool:
 - Parcel
